@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Paytone+One&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicio</title>
 </head>
 <body>
-    <main>
+    <main id="main">
         <div class="home" id="home">
-            <h1></h1>
-            <input id="filme"type="text" placeholder="Digite uma filme ou genero">
-            <button id="pesquisar">PESQUISAR</button>
+            <h1>MOVIES WIKIS</h1>
+            <input id="filme"type="text" placeholder="Pesquise um Filme">
         </div>
-        <div>
-            <h2></h2>
+        <div class="tiposFilmes">
+            <h2>GENÊROS</h2>
             <div id="tipos">
-                <div class="animacoes">ANiMAÇÕES</div>
-                <div class="classic">CLASSICO</div>
-                <div class="comedia">COMÉDIA</div>
-                <div class="drama">DRAMA</div>
-                <div class="horror">TERROR</div>
-                <div class="family">FAMILIA</div>
-                <div class="mystery">MISTÉRIO</div>
-                <div class="scifi">CIENTIFICO</div>
-                <div class="western">OCIDENTAL</div>
+                <div class="animacoes" id="animacoes">
+                    <a href="#">
+                    ANIMAÇÕES
+                    </a>
+                </div>
+                <div class="classic">
+                    <a href="#">CLASSICO</a>
+                </div>
+                <div class="comedia">
+                    <a href="#">COMÉDIA</a>
+                </div>
+                <div class="drama">
+                    <a href="#">DRAMA</a>
+                </div>
+                <div class="horror">
+                    <a href="#">TERROR</a>
+                </div>
+                <div class="family">
+                    <a href="#">FAMILIA</a>
+                </div>
+                <div class="mystery">
+                    <a href="#">MISTÉRIO</a>
+                </div>
+                <div class="scifi">
+                    <a href="#">CIENTIFICO</a>
+                </div>
             </div>
         </div>
     </main>
