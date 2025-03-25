@@ -126,6 +126,7 @@ h2{
     
 }
 
+/* TELA 2 FILMES DE ANIMAÇÃO */
 #tela {
     background-image: linear-gradient(#ADD8E6, #87CEEB, #4682B4, #1E3A5F, #0A192F);
     display: flex;
@@ -166,7 +167,6 @@ h2{
 }
 
 .imagem {
-   
     width: 100%;
     border-radius: 5px;
 }
@@ -176,3 +176,418 @@ h2{
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* TELA DE Filmes Classicos */
+
+#tela3{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo3{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card2{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem2 {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card2{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* TELA DE COMEDIA*/
+
+#tela4{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo4{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card3{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem3{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card3{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tela de drama*/
+
+#tela5{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo5{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card4{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem4{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card4{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tela de Terror*/
+
+#tela4{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo4{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card3{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem3{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card3{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tela de drama*/
+
+#tela6{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo6{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card5{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem5{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card5{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* TELA DE FAMILIA*/
+
+#tela7{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo7{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card6{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem6{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card6{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*TELA  DE MISTERIO*/
+
+#tela7{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo7{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card6{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem6{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card6{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tela de cientifico*/
+#tela7{
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.Titulo7{
+    margin-top: 70px;
+    font-size: 80px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #E5E5E5;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card6{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.imagem6{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titulo-card6{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}   
