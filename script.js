@@ -1,7 +1,5 @@
 'use strict'
 
-
-
 //função de listar as animações
 async function pesquisarFilmesAnimacoes(){
     const container = document.getElementById('container') 
@@ -23,14 +21,18 @@ async function pesquisarFilmesAnimacoes(){
         titulo.textContent = anime.title
         titulo.className = 'titulo-card'
 
+        card.addEventListener('click', () => abrirModal(anime))
+
         card.appendChild(imagem)
         card.appendChild(titulo)
         container.appendChild(card)
+
+       
     })
 }
 function animation(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela"
@@ -78,7 +80,7 @@ async function pesquisarClassico() {
 }
 function classic(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela3"
@@ -126,14 +128,14 @@ async function pesquisarComedia() {
 }
 function comedia(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela4"
 
     const titulo = document.createElement('h1')
     titulo.className = 'Titulo4'
-    titulo.textContent = 'CLÁSSICO'
+    titulo.textContent = 'COMÉDIA'
 
 
     const container = document.createElement('div')
@@ -175,7 +177,7 @@ async function pesquisarDRAMA() {
 
 function drama(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela5"
@@ -223,7 +225,7 @@ async function pesquisarTerror() {
 
 function terror(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren
 
     const tela = document.createElement('div')
     tela.id = "tela6"
@@ -270,7 +272,7 @@ async function pesquisarFamilia() {
 }
 function familia(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela7"
@@ -337,7 +339,6 @@ function misterio(){
 }
 
 // Criar tela de Cientifico
-
 async function pesquisarCientifico() {
     const container = document.getElementById('container') 
     const url = "https://api.sampleapis.com/movies/scifi-fantasy"
@@ -365,7 +366,7 @@ async function pesquisarCientifico() {
 }
 function Cientifico(){
     const main = document.getElementById('main')
-    main.innerHTML = ""
+    main.replaceChildren()
 
     const tela = document.createElement('div')
     tela.id = "tela7"
@@ -384,40 +385,42 @@ function Cientifico(){
     pesquisarCientifico()
 }
 
-async function pesquisar() {
-    const main = document.getElementById('main')
-    main.innerHTML = ""
-    const input = document.getElementById('filme').value
+function pesquisar(valor){
+    let dados = String(valor).toLowerCase()
+    
+    if (dados == "animacao"){
+        return animation()
+    } else if(dados == "classico"){
+        return classic()
+    } else if( dados == "comedia"){
+        return comedia()
+    }else if(dados == "drama"){
+         return drama()
+    } else if(dados == "terror"){
+        return terror()
+    }else if(dados == "familia"){
+        return familia()
+    }else if(dados == "misterio"){
+        return familia()
+    }else if(dados == "cientifico"){
+        return Cientifico()
+    }else{
+        return "Dados incorretos"
+    }
+   
+    
 }
-async function dados(input){
-    const container = document.getElementById('container') 
-    const url =`https://api.sampleapis.com/movies/${input}`
 
-    const response = await fetch(url)
-    const dados = await response.json()
+const filme = document.getElementById('filme'); // Pegando o input corretamente
 
-    dados.forEach(input =>{
-
-        if(dados.title == input){
-
-            const card = document.createElement('div')
-            card.className = 'card6=9'
-    
-            const imagem = document.createElement('img')
-            imagem.src = dados.posterURL 
-            imagem.alt = dados.title
-            imagem.className = 'imagem9'
-    
-            const titulo = document.createElement('p')
-            titulo.textContent = dados.title
-            titulo.className = 'titulo-card9'
-    
-            card.appendChild(imagem)
-            card.appendChild(titulo)
-            container.appendChild(card)
+filme.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const valorDigitado = filme.value.trim(); // Pegando o valor do input e removendo espaços extras
+        if (valorDigitado !== '') { // Evita pesquisas vazias
+            pesquisar(valorDigitado); // Chamando a função e passando o valor digitado
         }
-    })
-}
+    }
+});
 
 document.getElementById('animacoes').addEventListener('click', animation)
 document.getElementById('classics').addEventListener('click',classic)

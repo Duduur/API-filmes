@@ -128,7 +128,7 @@ h2{
 
 /* TELA 2 FILMES DE ANIMAÇÃO */
 #tela {
-    background-image: linear-gradient(#ADD8E6, #87CEEB, #4682B4, #1E3A5F, #0A192F);
+    background-image: linear-gradient(#0A192F, #1E3A5F, #4682B4, #87CEEB, #ADD8E6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,4 +590,4 @@ h2{
     font-size: 19px;
     font-weight: bold;
     margin-top: 10px;
-}   
+}
